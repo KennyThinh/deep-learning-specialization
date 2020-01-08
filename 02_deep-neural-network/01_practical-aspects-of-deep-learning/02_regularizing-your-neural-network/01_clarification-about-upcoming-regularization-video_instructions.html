@@ -1,0 +1,71 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  Please note that in the next video at 5:45, the Frobenius norm formula should be the following:
+ </p>
+ <p hasmath="true">
+  $$||w^{[l]}||^{2} = \sum_{i=1}^{n^{l}} \sum_{j=1}^{n^{[l-1]}} (w_{i,j}^{[l]})^{2}$$
+ </p>
+ <p hasmath="true">
+  The limit of summation of i should be from 1 to $$n^{[l]}$$,
+ </p>
+ <p hasmath="true">
+  The limit of summation of j should be from 1 to $$n^{[l-1]}$$.
+ </p>
+ <p hasmath="true">
+  (it's flipped in the video).  
+
+The rows "i" of the matrix should be the number of neurons in the current layer $$n^{[l]}$$;
+ </p>
+ <p hasmath="true">
+  whereas the columns "j" of the weight matrix should equal the number of neurons in the previous layer $$n^{[l-1]}$$.
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

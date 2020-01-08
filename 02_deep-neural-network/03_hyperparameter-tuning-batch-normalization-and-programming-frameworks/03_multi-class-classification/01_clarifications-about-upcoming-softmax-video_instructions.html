@@ -1,0 +1,60 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  Please note that in the next video at 4:30, the text for the softmax formulas mixes subscripts "j" and "i", when the subscript should just be the same (just "i") throughout the formula.
+ </p>
+ <p>
+  So the formula for softmax should be:
+ </p>
+ <h1 hasmath="true" level="1">
+  $$a^{[L]} = \frac{e^{Z^{L}}}{\sum_{i=i}^{4} t_{i} }$$
+ </h1>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
